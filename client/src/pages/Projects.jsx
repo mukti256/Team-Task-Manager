@@ -23,7 +23,7 @@ function Projects() {
         localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/projects",
+        "https://team-task-manager-production-1376.up.railway.app/api/projects",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ function Projects() {
         localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/projects",
+        "https://team-task-manager-production-1376.up.railway.app/api/projects",
         {
           name,
           description
